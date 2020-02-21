@@ -9,11 +9,13 @@ namespace Robos.Models
 {
     public class Monedas
     {
-        //[Required]
+        [Key]
+        [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int MonedaId { get; set; } //MonedaID CHAR(3) NOT NULL
+        [StringLength(3)]
+        public string MonedaId { get; set; } //MonedaID CHAR(3) NOT NULL
 
-        //[Required]
+        [Required]
         [StringLength(50)]
         public string Nombre { get; set; } //Nombre VARCHAR(50) NOT NULL
     }

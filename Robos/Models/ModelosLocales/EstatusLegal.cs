@@ -11,7 +11,7 @@ namespace Robos.Models
         [Key]
         [Required]
         [StringLength(2)]
-        [Display(Name = "Id (Estatus Legal)")]
+        [Display(Name = "Estatus Legal Id")]
         public string EstatusLegalId { get; set; } //EstatusLegalID CHAR(2) NOT NULL **Type?**
 
         [Required]

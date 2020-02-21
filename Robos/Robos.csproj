@@ -195,7 +195,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ModelosLocales\Activos.cs" />
     <Compile Include="Models\ModelosLocales\EstatusLegal.cs" />
-    <Compile Include="Models\ModelosLocales\FristResponse.cs" />
+    <Compile Include="Models\ModelosLocales\FirstResponse.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ModelosLocales\IncidenteAjustes.cs" />
     <Compile Include="Models\ModelosLocales\IncidenteEnc.cs" />
@@ -207,7 +207,7 @@
     <Compile Include="Models\ModelosLocales\SeguimientoLegal.cs" />
     <Compile Include="Models\ModelosLocales\Sentencia.cs" />
     <Compile Include="Models\ModelosLocales\Sucursales.cs" />
-    <Compile Include="Models\ModelosLocales\TipoIncidentes.cs" />
+    <Compile Include="Models\ModelosLocales\TipoIncidente.cs" />
     <Compile Include="Models\ModelosLocales\UnidadesNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />

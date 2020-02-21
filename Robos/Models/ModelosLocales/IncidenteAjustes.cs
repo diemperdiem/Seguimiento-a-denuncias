@@ -12,12 +12,16 @@ namespace Robos.Models
         [Key]
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Display(Name = "Incidente Id (Ajustes)")]
-        public int IncidenteAjustesId { get; set; } //IncidenteID(FK) INTEGER NOT NULL
-
-        [Required]
         [Display(Name = "Folio ajuste")]
         [StringLength(50)]
         public string FolioAjuste { get; set; } //FolioAjuste VARCHAR(50) NOT NULL
+
+        public IncidenteEnc IncidenteEnc { get; set; }
+
+        [Required]
+        [Display(Name = "Incidente Enc Id")]
+        public int IncidenteAjustesId { get; set; } //IncidenteID(FK) INTEGER NOT NULL
+
+        
     }
 }

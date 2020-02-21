@@ -12,24 +12,44 @@ namespace Robos.Models
         [Key]
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Display(Name = "Incidente Id (Incidente Enc)")]
+        [Display(Name = "Incidente Enc Id")]
         public int IncidenteId { get; set; } //IncidenteID INTEGER NOT NULL
 
         [Required]
         [Display(Name = "Fecha Incidente")]
         public DateTime FechaIncidente { get; set; } //FechaIncidente DATETIME NULL
 
-        public TipoIncidentes TipoIncidete { get; set; }
-        [Required]
-        public string TipoIncidenteID { get; set; } //TipoIncidenteID(FK) CHAR(2) NOT NULL **Type?**
-
-        public Sucursales Sucursales { get; set; }
+        public TipoIncidente TipoIncidete { get; set; }
 
         [Required]
-        public byte SucursalId { get; set; } //sucursal(FK) SMALLINT NOT NULL
-        public string UnidadNegocioID { get; set; } //UnidadNegocioID(FK) CHAR(2) NOT NULL
+        [StringLength(2)]
+        public string TipoIncidenteId { get; set; } //TipoIncidenteID(FK) CHAR(2) NOT NULL **Type?**
+
+        public Sucursales Sucursal { get; set; }
+
+        [Required]
+        public int SucursalId { get; set; } //sucursal(FK) SMALLINT NOT NULL
+
+        public UnidadesNegocio UnidadNegocio { get; set; }
+
+        [Required]
+        [Display(Name = "Unidad Negocio")]
+        [StringLength(2)]
+        public string UnidadNegocioId { get; set; } //UnidadNegocioID(FK) CHAR(2) NOT NULL
+
+        [Required]
+        [Display(Name = "Cantidad Detenidos")]
+        [StringLength(10)]
         public string CantidadDetenidos { get; set; } //CantidadDetenidos CHAR(10) NULL
+
+        [Required]
+        [Display(Name = "Nota 1")]
+        [StringLength(10)]
         public string Notas1 { get; set; } //Notas1 CHAR(10) NULL
+
+        [Required]
+        [Display(Name = "Nota 2")]
+        [StringLength(10)]
         public string Notas2 { get; set; } //Notas2 CHAR(10) NULL
     }
 }

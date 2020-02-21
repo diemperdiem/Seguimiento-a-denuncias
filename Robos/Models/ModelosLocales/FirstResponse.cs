@@ -6,16 +6,18 @@ using System.Web;
 
 namespace Robos.Models
 {
-    public class FristResponse
+    public class FirstResponse
     {
         [Key]
         [Required]
-        [Display(Name = "Incidente Id (First Response)")]
-        public int IncidenteId { set; get; } //IncidenteID (FK) INTEGER NOT NULL
+        [Display(Name = "First Response Id")]
+        public int FirstResponseId { set; get; } //LineItem SMALLINT NOT NULL **Type?**
+        
+        public IncidenteEnc IncidenteEnc { set; get; }
 
         [Required]
-        [Display(Name = "Line Item")]
-        public byte LineItem { set; get; } //LineItem SMALLINT NOT NULL **Type?**
+        [Display(Name = "Incidente Id")]
+        public int IncidenteEncId { set; get; } //IncidenteID (FK) INTEGER NOT NULL
 
         [Required]
         [StringLength(50)]
@@ -31,7 +33,7 @@ namespace Robos.Models
 
         [Required]
         [Display(Name = "Tiempo Respuesta")]
-        public byte TiempoRespuesta { set; get; } //TiempoRespuesta SMALLINT NOT NULL **Type?**
+        public int TiempoRespuesta { set; get; } //TiempoRespuesta SMALLINT NOT NULL **Type?**
 
         [Required]
         [Display(Name = "Incidente 911")]
@@ -39,6 +41,7 @@ namespace Robos.Models
         public string Incidente911ID { set; get; } //Incidente911ID VARCHAR(50) NOT NULL
 
         [Required]
+        [StringLength(50)]
         public string IPHID { set; get; } //IPHID VARCHAR(50) NOT NULL
 
         [Required]
