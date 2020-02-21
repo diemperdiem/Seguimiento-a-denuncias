@@ -11,10 +11,11 @@ namespace Robos.Models
         [Key]
         [Required]
         [StringLength(2)]
-        string EstatusLegalId { get; set; } //EstatusLegalID CHAR(2) NOT NULL
+        [Display(Name = "Id (Estatus Legal)")]
+        public string EstatusLegalId { get; set; } //EstatusLegalID CHAR(2) NOT NULL **Type?**
 
         [Required]
         [StringLength(50)]
-        string Nombre { get; set; } //Nombre VARCHAR(50) NOT NULL
+        public string Nombre { get; set; } //Nombre VARCHAR(50) NOT NULL
     }
 }

@@ -11,7 +11,7 @@ namespace Robos.Models
     {
         //[Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int MonedaID { get; set; } //MonedaID CHAR(3) NOT NULL
+        public int MonedaId { get; set; } //MonedaID CHAR(3) NOT NULL
 
         //[Required]
         [StringLength(50)]

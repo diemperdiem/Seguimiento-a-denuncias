@@ -15,7 +15,7 @@ namespace Robos.Models
         public int IncidenteId { get; set; } //IncidenteID (FK) INTEGER NOT NULL
 
         [Required]
-        public byte LineItem { get; set; } //LineItem SMALLINT NOT NULL
+        public byte LineItem { get; set; } //LineItem SMALLINT NOT NULL **Type?**
 
         [Required]
         [StringLength(50)]

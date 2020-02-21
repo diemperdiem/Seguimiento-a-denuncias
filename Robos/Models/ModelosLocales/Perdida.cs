@@ -7,7 +7,7 @@ namespace Robos.Models
 {
     public class Perdida
     {
-        public int IncidenteID { set; get; } //IncidenteID(FK) INTEGER NOT NUL
+        public int IncidenteId { set; get; } //IncidenteID(FK) INTEGER NOT NUL
         public byte LineItem { set; get; } //LineItem SMALLINT NOT NULL
         public float Venta { set; get; } //Venta DECIMAL(18,2) NOT NULL
         public string MonedaVenta { set; get; } //MonedaVenta(FK) CHAR(3) NOT NULL
