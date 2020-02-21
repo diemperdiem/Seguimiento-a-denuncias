@@ -12,7 +12,7 @@ namespace Robos.Models
         [Key]
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IncidenteId { get; set; } //IncidenteID (FK) INTEGER NOT NULL
+        public int IncidenteId { get; set; } //IncidenteID (FK) INTEGER NOT NULL //preubaaaa
 
         [Required]
         public byte LineItem { get; set; } //LineItem SMALLINT NOT NULL **Type?**
